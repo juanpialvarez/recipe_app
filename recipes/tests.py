@@ -1,5 +1,7 @@
 from django.test import TestCase
 from .models import Recipe
+from http import HTTPStatus
+from .forms import RecipesSearchForm
 
 
 class RecipeTest(TestCase):
@@ -24,3 +26,10 @@ class RecipeTest(TestCase):
     def test_get_absolute_url(self):
         book = Recipe.objects.get(id=1)
         self.assertEqual(book.get_absolute_url(), "/recipes/1")
+
+
+class RecipeFormTest(TestCase):
+    def test_form(self):
+        form_data = {"ingredient": "water", "chart_type": "#1"}
+        form = RecipesSearchForm(data=form_data)
+        self.assertTrue(form.is_valid())
