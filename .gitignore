@@ -1,7 +1,7 @@
+src/settings.py
+
 # Text backup
 *.bank
 
 # Database 
 *.sqlite
-
-settings.py
