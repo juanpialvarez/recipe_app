@@ -8,6 +8,10 @@ django = "*"
 pillow = "*"
 pandas = "*"
 matplotlib = "*"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 
