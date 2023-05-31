@@ -1,1 +1,1 @@
-web: gunicorn bookstore.wsgi --log-file -
+web: gunicorn A2_Recipe_App_2.wsgi --log-file -
