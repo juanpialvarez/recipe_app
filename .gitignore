@@ -4,4 +4,4 @@
 # Database 
 *.sqlite
 
-*settings.py
+settings.py
