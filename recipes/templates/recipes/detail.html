@@ -1,9 +1,25 @@
-<h2>Name: {{object.name}}</h2>
+{% load static %}
 
-<b>Cooking time: </b> {{object.cooking_time}} <br />
+<head>
+  <link rel="stylesheet" href="{%static 'recipes/style.css' %}" />
+  <title>Recipes App Home</title>
+</head>
+<!DOCTYPE html>
+<html>
+  <h1>Details</h1>
+  <h2>Name: {{object.name}}</h2>
 
-<b>Ingredients: </b> {{object.ingredients}} <br />
+  <b>Cooking time: </b>
+  {{object.cooking_time}}
+  <br />
 
-<b>Difficulty: </b> {{object.difficulty}} <br />
+  <b>Ingredients: </b>
+  {{object.ingredients}}
+  <br />
 
-<img src="{{object.image.url}}" width="200" height="300" />
+  <b>Difficulty: </b>
+  {{object.difficulty}}
+  <br />
+
+  <img src="{{object.image.url}}" width="200" height="300" />
+</html>

@@ -1,6 +1,14 @@
-<h1>Login</h1>
-{% if error_message %} {{error_message}} {% endif %}
-<form action="" method="POST">
-  {% csrf_token %} {{form}}
-  <button type="submit">Login</button>
-</form>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{%static 'style.css' %}" />
+</head>
+<!DOCTYPE html>
+<html>
+  <title>Login Recipe App</title>
+  <h1>Login</h1>
+  {% if error_message %} {{error_message}} {% endif %}
+  <form action="" method="POST">
+    {% csrf_token %} {{form}}
+    <button type="submit">Login</button>
+  </form>
+</html>
