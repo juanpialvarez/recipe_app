@@ -1,4 +1,4 @@
-src/settings.py
+/src/settings.py
 
 # Text backup
 *.bank
