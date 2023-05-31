@@ -3,3 +3,5 @@
 
 # Database 
 *.sqlite
+
+src/settings.py
